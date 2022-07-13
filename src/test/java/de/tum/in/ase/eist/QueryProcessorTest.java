@@ -32,8 +32,14 @@ class QueryProcessorTest {
 
 	@Test
 	void split() {
-		System.out.println(queryProcessor.process("a085d130: which of the following numbers is the largest: 857, 123423, 134,434,12,12314213,34"));
-		System.out.println(queryProcessor.process("what is 15 plus 2"));
+		assertEquals("12314213",queryProcessor.process("a085d130: which of the following numbers is the largest: 857, 123423, 134,434,12,12314213,34"));
+		assertEquals("17",queryProcessor.process("what is 15 plus 2"));
+	}
+
+	@Test
+	void m() {
+		assertEquals("20",queryProcessor.process("what is 5 multiplied by 4"));
+
 	}
 
 }
