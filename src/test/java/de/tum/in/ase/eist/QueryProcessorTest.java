@@ -33,6 +33,7 @@ class QueryProcessorTest {
 	@Test
 	void split() {
 		System.out.println(queryProcessor.process("a085d130: which of the following numbers is the largest: 857, 123423"));
+		System.out.println(queryProcessor.process("what is 15 plus 2"));
 	}
 
 }
